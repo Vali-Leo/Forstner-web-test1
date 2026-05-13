@@ -47,3 +47,37 @@
       title="Freies Bild"
       width="400"
     >
+ <figcaption>
+      Urheber: 
+      <a href="https://commons.wikimedia.org/wiki/User:Johann_Jaritz" target="_blank">
+        Johann Jaritz
+      </a>
+      <br>
+
+      Titel:
+      <a href="https://commons.wikimedia.org/wiki/File:P%C3%B6rtschach_Werzerpromenade_10_W%C3%B6rther_See_Stockentenpaar_15032016_0943.jpg" target="_blank">
+        Wörtersee
+      </a>
+      <br>
+
+      Lizenz:
+      <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en" target="_blank">
+        CC BY-SA 4.0
+      </a>
+    </figcaption>
+  </figure>
+
+  <script>
+    const hobbys = ["Fußball", "Gaming", "Musik hören", "DEIN NAME"];
+
+    const liste = document.getElementById("liste-hobbys");
+
+    hobbys.forEach(h => {
+      let li = document.createElement("li");
+      li.textContent = h;
+      liste.appendChild(li);
+    });
+  </script>
+
+</body>
+</html>
