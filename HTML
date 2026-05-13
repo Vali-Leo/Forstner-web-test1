@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vorname Nachname – Klasse</title>
+</head>
+
+<body style="background-color: lightblue;">
+
+  <h1>Valentin Forstner – KLASSE</h1>
+
+  <h2>Persönliche Daten</h2>
+
+  <p>
+    Geburtsdatum: 26.09.2026<br>
+    Lieblingsfarbe: blue
+  </p>
+  <h2>Meine Lieblingsfächer</h2>
+
+  <ol>
+    <li>Informatik</li>
+    <li>Deutsch</li>
+    <li>Sport</li>
+  </ol>
+
+  <h2>Meine Hobbys</h2>
+
+  <ul id="liste-hobbys"></ul>
+<script>
+  const hobbys = ["Fußball", "Tennis", "Videospiele spielen",];  
+  const liste = document.getElementById("liste-hobbys");
+  hobbys.forEach(h => {
+    let li = document.createElement("li");
+    li.textContent = h;
+    liste.appendChild(li);
+  });
+</script>
+
+
+  <h2>Freies Bild</h2>
+
+  <figure>
+    <img 
+      src="img/bild1.jpg"
+      alt="Berglandschaft mit See"
+      title="Freies Bild"
+      width="400"
+    >
